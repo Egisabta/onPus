@@ -15,6 +15,8 @@
     <link rel="stylesheet" type="text/css" href="{{asset('css/app.css') }}">
     {{-- font awesome --}}
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="{{ asset('css/dataTables.bootstrap5.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/responsive.bootstrap.min.css') }}">
 </head>
 <body>
     {{-- navbar --}}
@@ -32,6 +34,12 @@
                     <a class="nav-link bi bi-person-circle" href="/daftarAnggota"> DataUser</a>
                   </li>
                   <li class="nav-item">
+                    <a class="nav-link bi bi-person-circle" href="{{ route('employees') }}"> Pegawai</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link bi bi-person-circle" href="{{ route('students') }}"> Mahasiswa</a>
+                  </li>
+                  <li class="nav-item">
                     <a class="nav-link bi-book" href="/listBuku"> DataBuku</a>
                   </li>
                   <li class="nav-item">
@@ -45,5 +53,9 @@
       </section>
         {{-- akhir navbar --}}
         @yield('navbar')
+  <script src="{{ asset('js/dataTables.bootstrap5.min.js') }}"></script>
+  <script src="{{ asset('js/dataTables.responsive.min.js') }}"></script>
+  <script src="{{ asset('js/jquery.dataTables.min.js') }}"></script>
+  <script src="{{ asset('js/jquery.min.js') }}"></script>
 </body>
 </html>
