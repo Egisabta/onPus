@@ -1,6 +1,6 @@
 @extends('admin')
 @section('navbar')
-<form action="{{ isset($employee) ? route('employees.update', $employee['id']) : route('employees.create') }}" method="post" data-request="ajax">
+<form action="{{ isset($employee) ? route('employees.update', $employee['id']) : route('employees.store') }}" method="post" data-request="ajax">
     @csrf
     <div class="modal-header">
         <h5 class="modal-title"></h5>
