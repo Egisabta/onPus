@@ -15,7 +15,7 @@
               </tr>
             </thead>
             <tbody>
-                @foreach ($members as $item)
+                @foreach ($data as $item)
                 <tr>
                   <th scope="row">{{ $loop->iteration }}</th>
                   <td>{{ $item->name }}</td>

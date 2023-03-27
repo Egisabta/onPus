@@ -11,7 +11,7 @@
             <label for="exampleInputPassword1">Buku</label>
           </div>
           <select name="daftar_buku_id" id="daftar_buku_id" class="form-control">
-            @foreach ($books as $item)
+            @foreach ($items as $item)
               <option value="{{ $item->id }}">{{ $item->judul_buku }}</option>
             @endforeach
           </select>
