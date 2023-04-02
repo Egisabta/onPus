@@ -15,7 +15,7 @@
               </tr>
             </thead>
             <tbody>
-                @foreach ($data as $item)
+                @foreach ($listbuku as $item)
                 <tr>
                   <th scope="row">{{ $loop->iteration }}</th>
                   <td>{{ $item->name }}</td>
